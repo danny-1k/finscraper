@@ -56,3 +56,6 @@ The filters are split into **Descriptive**, **Fundamental** &  **Technical**
 
 #### Technical
 
+
+# TODO
+- This readme
