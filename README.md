@@ -19,9 +19,16 @@ screener = Screener()
 
 data = screener.query(filters=filters)
 
-print(data)
+for row in data:
+    print(row)
 
-#[{'No.': '1', 'Ticker': '1', 'Company': '1', 'Sector': '1', 'Industry': '1', 'Country': '1', 'Market Cap': '1', 'P/E': '1', 'Price': '1', 'Change': '1', 'Volume': '1'}, {'No.': '1', 'Ticker': 'BTCM', 'Company': 'BIT Mining Limited', 'Sector': 'Technology', 'Industry': 'Information Technology Services', 'Country': 'Hong Kong', 'Market Cap': '36.69M', 'P/E': '-', 'Price': '4.09', 'Change': '0.00%', 'Volume': '1,122,310'}, {'No.': '1', 'Ticker': 'BIT Mining Limited', 'Company': 'Information Technology Services', 'Sector': '36.69M', 'Industry': '4.09', 'Country': '1,122,310', 'Market Cap': 'ICD', 'P/E': 'Energy', 'Price': 'USA', 'Change': '-', 'Volume': '1.37%'}, {'No.': '1', 'Ticker': 'Technology', 'Company': '36.69M', 'Sector': '0.00%', 'Industry': 'ICD', 'Country': 'Oil & Gas Drilling', 'Market Cap': '-', 'P/E': '201,295', 'Price': 'Party City Holdco Inc.', 'Change': 'USA', 'Volume': '0.37'}, {'No.': '1', 'Ticker': 'Information Technology Services', 'Company': '4.09', 'Sector': 'ICD', 'Industry': 'USA', 'Country': '1.37%', 'Market Cap': 'Party City Holdco Inc.', 'P/E': '42.40M', 'Price': '32,916,676', 'Change': 'Technology', 'Volume': '-'}]
+"""
+{'No.': '1', 'Ticker': 'BTCM', 'Company': 'BIT Mining Limited', 'Sector': 'Technology', 'Industry': 'Information Technology Services', 'Country': 'Hong Kong', 'Market Cap': '36.69M', 'P/E': '-', 'Price': '4.09', 'Change': '0.00%', 'Volume': '1,122,310'}
+{'No.': '2', 'Ticker': 'ICD', 'Company': 'Independence Contract Drilling, Inc.', 'Sector': 'Energy', 'Industry': 'Oil & Gas Drilling', 'Country': 'USA', 'Market Cap': '69.62M', 'P/E': '-', 'Price': '5.18', 'Change': '1.37%', 'Volume': '201,295'}
+{'No.': '3', 'Ticker': 'PRTY', 'Company': 'Party City Holdco Inc.', 'Sector': 'Consumer Cyclical', 'Industry': 'Specialty Retail', 'Country': 'USA', 'Market Cap': '42.40M', 'P/E': '0.28', 'Price': '0.37', 'Change': '7.19%', 'Volume': '32,916,676'}
+{'No.': '4', 'Ticker': 'SOS', 'Company': 'SOS Limited', 'Sector': 'Technology', 'Industry': 'Software - Infrastructure', 'Country': 'China', 'Market Cap': '43.47M', 'P/E': '-', 'Price': '7.33', 'Change': '6.39%', 'Volume': '384,651'}
+{'No.': '5', 'Ticker': 'VLTA', 'Company': 'Volta Inc.', 'Sector': 'Consumer Cyclical', 'Industry': 'Specialty Retail', 'Country': 'USA', 'Market Cap': '149.27M', 'P/E': '-', 'Price': '0.88', 'Change': '2.26%', 'Volume': '5,774,167'}
+"""
 
 ```
 ### Filters on the Finviz ui
