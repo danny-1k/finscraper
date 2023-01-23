@@ -51,11 +51,55 @@ The filters are split into **Descriptive**, **Fundamental** &  **Technical**
 
 
 #### Fundamental
-- 
+- P/E
+- Price/Cash
+- EPS growth next 5 years
+- Return on Equity
+- Debt/Equity
+- Insider Ownership
+- Forward P/E	
+- Price/Free Cash Fl
+- Sales growth past 5 years
+- Return on Investment
+- Gross Margin
+- Insider Transactions
+- PEG
+- EPS growth this year
+- EPS growth qtr over qtr
+- Current Ratio
+- Operating Margin
+- Institutional Ownership
+- P/S
+- EPS growth next year
+- Sales growth qtr over qtr
+- Quick Ratio
+- Net Profit Margin
+- Institutional Transactions
+- P/B
+- EPS growth past 5 years
+- Return on Assets
+- LT Debt/Equity
+- Payout Ratio
 
 
 #### Technical
-
+- Performance
+- 20-Day Simple Moving Average
+- 20-Day High/Low
+- Beta
+- Performance 2
+- 50-Day Simple Moving Average
+- 50-Day High/Low
+- Average True Range
+- Volatility
+- 200-Day Simple Moving Average
+- 52-Week High/Low
+- RSI
+- Change
+- Pattern
+- Gap
+- Change from Ope
+- Candlestick
 
 # TODO
-- This readme
+- Proxy to rotate IP's 
