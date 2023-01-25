@@ -17,18 +17,16 @@ filters = {
 
 screener = Screener()
 
-data = screener.query(filters=filters)
+tickers = screener.query(filters=filters)
 
-for row in data:
-    print(row)
+print(tickers)
+#>>> Tickers Bin containing 20 tickers
 
-"""
-{'No.': '1', 'Ticker': 'BTCM', 'Company': 'BIT Mining Limited', 'Sector': 'Technology', 'Industry': 'Information Technology Services', 'Country': 'Hong Kong', 'Market Cap': '36.69M', 'P/E': '-', 'Price': '4.09', 'Change': '0.00%', 'Volume': '1,122,310'}
-{'No.': '2', 'Ticker': 'ICD', 'Company': 'Independence Contract Drilling, Inc.', 'Sector': 'Energy', 'Industry': 'Oil & Gas Drilling', 'Country': 'USA', 'Market Cap': '69.62M', 'P/E': '-', 'Price': '5.18', 'Change': '1.37%', 'Volume': '201,295'}
-{'No.': '3', 'Ticker': 'PRTY', 'Company': 'Party City Holdco Inc.', 'Sector': 'Consumer Cyclical', 'Industry': 'Specialty Retail', 'Country': 'USA', 'Market Cap': '42.40M', 'P/E': '0.28', 'Price': '0.37', 'Change': '7.19%', 'Volume': '32,916,676'}
-{'No.': '4', 'Ticker': 'SOS', 'Company': 'SOS Limited', 'Sector': 'Technology', 'Industry': 'Software - Infrastructure', 'Country': 'China', 'Market Cap': '43.47M', 'P/E': '-', 'Price': '7.33', 'Change': '6.39%', 'Volume': '384,651'}
-{'No.': '5', 'Ticker': 'VLTA', 'Company': 'Volta Inc.', 'Sector': 'Consumer Cyclical', 'Industry': 'Specialty Retail', 'Country': 'USA', 'Market Cap': '149.27M', 'P/E': '-', 'Price': '0.88', 'Change': '2.26%', 'Volume': '5,774,167'}
-"""
+print(tickers[0].company)
+#>>> BIT Mining Limited
+
+print(tickers[0].volume)
+#>>> 1122310
 
 ```
 ### Filters on the Finviz ui
