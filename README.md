@@ -28,6 +28,9 @@ print(tickers[0].company)
 print(tickers[0].volume)
 #>>> 1122310
 
+
+tickers.to_csv("scraped.csv")
+
 ```
 ### Filters on the Finviz ui
 
