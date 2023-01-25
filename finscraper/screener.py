@@ -2,6 +2,7 @@ from typing import Optional
 import requests
 import random
 from bs4 import BeautifulSoup
+from .tickers import Tickers
 from .filter import prefixer, is_filter_value_allowed, filter_exists
 from .utils import get_number_of_pages, get_tickers_table, construct_table_from_data
 
@@ -47,17 +48,16 @@ class Screener:
         url = self.url + self._construct_url(filters)
         data, total = self._get_page(url=url)
 
+        tickers = Tickers(tickers=data)
+
         if limit and len(data) < limit:
-            aggregated = [*data]
 
             for page_idx in range(1, int(total)):
-                aggregated += self._get_page(url=url, page_idx=page_idx)
-                if len(aggregated) >= limit:
+                tickers.add_tickers(self._get_page(url=url, page_idx=page_idx))
+                if len(tickers) >= limit:
                     break
 
-            return aggregated
-
-        return data
+        return tickers
 
     def _get_page(self, url: str, page_idx: Optional[int] = None):
         """scrape data from a page given the page index and url
