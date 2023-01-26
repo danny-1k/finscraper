@@ -1,4 +1,13 @@
 # FINVIZ Scraper
+A library for interacting with https://finviz.com
+
+## Install
+
+```bash
+$ pip install fvscraper
+```
+*The package name is `fvscraper` but it should be imported as `finscraper`*
+
 
 ## How to use
 
